@@ -1,0 +1,15 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+let line = lines[0].split(" ");
+let x = parseInt(line[0]);
+let y = parseInt(line[1]);
+
+if(x >= y){
+    let z = y + 24 - x;
+    console.log("O JOGO DUROU " + z + " HORA(S)");
+}
+else{
+    let p = y - x
+    console.log("O JOGO DUROU " + p + " HORA(S)");
+}
